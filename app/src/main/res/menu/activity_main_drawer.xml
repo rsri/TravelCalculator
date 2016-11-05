@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_sun_calc"
+        android:icon="@drawable/ic_action_sun"
+        android:checkable="true"
+        android:checked="true"
+        android:title="@string/sun_calc" />
+    <item
+        android:id="@+id/nav_locations"
+        android:icon="@drawable/ic_action_locations"
+        android:checkable="true"
+        android:title="@string/locations" />
+    <item
+        android:id="@+id/nav_generate"
+        android:icon="@drawable/ic_action_table"
+        android:checkable="true"
+        android:title="@string/generate_table" />
+    <item
+        android:id="@+id/nav_pick_from_map"
+        android:icon="@drawable/ic_action_map"
+        android:checkable="true"
+        android:title="@string/pick_from_map" />
+    <item
+        android:id="@+id/nav_view_forecast"
+        android:icon="@drawable/ic_action_forecast"
+        android:checkable="true"
+        android:title="@string/view_forecast" />
+
+</menu>

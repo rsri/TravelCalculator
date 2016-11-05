@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5">
+
+        <EditText
+            android:id="@+id/enter_loc_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="4"
+            android:hint="Enter location name"
+            android:imeOptions="actionNext"
+            android:inputType="text" />
+
+        <ImageView
+            android:id="@+id/curr_location_iv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_action_location"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/enter_lat_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter latitude"
+        android:imeOptions="actionNext"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <EditText
+        android:id="@+id/enter_long_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter longitude"
+        android:imeOptions="actionDone"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/cancel_loc_btn"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/save_loc_btn"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:text="Save" />
+    </LinearLayout>
+</LinearLayout>
